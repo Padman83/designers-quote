@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import { quotes } from './designersquote.json';
+import DesignersQuote from './components/DesignersQuote.jsx';
 
-function App() {
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      quote: "Click the Paint button to generate a quote!"
+    }
+  }
+
+  generateQuote() {
+  let quote = quotes[Math.floor(Math.random()*quotes.length)];
+  this.setState({quote: quote});
+}
+
+render() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>"designers quote"</h1>
+        <button onClick={() => this.generateQuote()}>Paint</button>
       </header>
+      <p className="App-intro">
+        <DesignersQuote quote={this.state.quote} />
+      </p>
     </div>
   );
+ }
 }
 
 export default App;
