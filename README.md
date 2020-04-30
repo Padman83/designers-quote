@@ -1,4 +1,4 @@
-## Designers Quote Wallpaper.
+## Designers Quote.
 
 #### A responsive React Web App that displays wisdom quotes from various designers, authors and artist.
 
