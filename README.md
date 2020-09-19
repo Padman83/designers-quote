@@ -1,36 +1,15 @@
 ## Designers Quote.
 
-#### A responsive React Web App that displays wisdom quotes from various designers, authors and artist.
-
 ![screencapture-localhost-3000-2019-11-14-10_00_07](https://user-images.githubusercontent.com/45048950/68912292-ba462400-0792-11ea-8575-528939378311.png)
 
+## 🧰 System Requirements:
 
-## 🧰 System Requirements
-
-* Mac , Linux or Windows.
-
-
-### Code Editor
-
+* Cross-Platform
 * [Visual Studio Code] (https://code.visualstudio.com)
 
-
-### Design Tool
-
-* [Adobe XD] (https://www.adobe.com)
-
-
-### Built With
+### 🛠️ Built With:
 
 * [create-react-app.dev] (https://create-react-app.dev/)
-
-
-### Project Link
-
-* [https://github.com/Padman83/designers-quote]
-
-
-
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
